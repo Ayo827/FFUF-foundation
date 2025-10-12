@@ -1,0 +1,1 @@
+/** Polyfills placeholder — keep minimal for modern Angular build **/

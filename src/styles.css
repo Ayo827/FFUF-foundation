@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom small helpers */
+:root {
+  --accent: #d6336c;
+  --accent-2: #c48a2f;
+}
+a { color: inherit; }
+.scroll-smooth { scroll-behavior: smooth; }
+
+/* hero overlay gradient */
+.hero-overlay {
+  background: linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35));
+}
