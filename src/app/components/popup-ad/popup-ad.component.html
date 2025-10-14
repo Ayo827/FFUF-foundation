@@ -1,0 +1,25 @@
+<div 
+  *ngIf="showAd" 
+  class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 transition-opacity duration-500"
+  [ngClass]="{ 'opacity-100': isVisible, 'opacity-0': !isVisible }"
+>
+  <div 
+    class="bg-white rounded-lg shadow-xl max-w-sm w-full p-4 relative transform transition-all duration-500"
+    [ngClass]="{ 'scale-100 opacity-100': isVisible, 'scale-75 opacity-0': !isVisible }"
+  >
+    <button 
+      (click)="closeAd()" 
+      class="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+    >
+      ✕
+    </button>
+
+    <a [href]="adLink" target="_blank" rel="noopener noreferrer">
+      <img 
+        [src]="adImage" 
+        alt="Popup Ad" 
+        class="rounded-lg w-full object-cover"
+      />
+    </a>
+  </div>
+</div>

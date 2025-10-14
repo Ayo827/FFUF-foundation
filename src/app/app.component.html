@@ -1,17 +1,17 @@
 <div class="scroll-smooth">
-  <!-- NAV -->
+  <app-popup-ad></app-popup-ad>
+
   <nav class="fixed w-full z-40 bg-white/60 backdrop-blur-md">
     <div class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
       <div class="flex items-center space-x-3">
-        <div class="w-10 h-10 rounded-full bg-ffuf-rose/20 flex items-center justify-center text-ffuf-rose font-bold">FF</div>
-        <div class="font-semibold">Francis & Felicia Umenyi Foundation</div>
+        <img src="assets/logo.jpg" alt="Foundation Logo" class="h-10 w-auto" />
       </div>
       <div class="hidden md:flex items-center space-x-4 text-sm">
         <a href="#about" class="hover:underline">About</a>
         <a href="#focus" class="hover:underline">Focus Areas</a>
         <a href="#impact" class="hover:underline">Impact</a>
         <a href="#partners" class="hover:underline">Partners</a>
-        <a href="#contact" class="px-3 py-1 rounded-md bg-ffuf-rose text-white">Donate</a>
+        <a href="#contact" class="px-3 py-1 rounded-md bg-ffuf-rose text-dark">Donate</a>
       </div>
       <div class="md:hidden">
         <!-- Mobile: simple anchor to top -->
@@ -20,16 +20,15 @@
     </div>
   </nav>
 
-  <!-- HERO -->
   <header class="pt-20">
     <div class="relative overflow-hidden">
-      <img src="https://images.unsplash.com/photo-1584466977777-6a1bb162ce5b?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="community outreach" class="w-full h-[60vh] object-cover brightness-90">
+      <img src="assets/Womens-Health-Community-Outreach.jpg" alt="community outreach" class="w-full h-[60vh] object-cover brightness-90">
       <div class="absolute inset-0 flex items-center justify-center hero-overlay">
         <div class="max-w-4xl mx-auto text-center px-6">
           <h1 class="text-3xl md:text-5xl font-extrabold text-white leading-tight">Empowering Women. Strengthening Communities. Transforming Lives.</h1>
           <p class="mt-4 text-white/90 max-w-2xl mx-auto">Honoring the legacy of Francis and Felicia Umenyi through programs that advance women’s health, strengthen rural healthcare, and promote inclusion for all.</p>
           <div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
-            <a href="#contact" class="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-ffuf-rose text-white shadow-md">👉 Support Our Work</a>
+            <a href="https://wa.me/2348038503654" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-ffuf-rose text-white shadow-md">👉 Support Our Work</a>
             <a href="#about" class="inline-flex items-center gap-2 px-6 py-3 rounded-md border border-white/30 text-white">📖 Learn More About Us</a>
           </div>
         </div>
@@ -37,7 +36,6 @@
     </div>
   </header>
 
-  <!-- ABOUT -->
   <section id="about" class="py-16">
     <div class="max-w-5xl mx-auto px-6">
       <div class="grid md:grid-cols-2 gap-8 items-center">
@@ -48,13 +46,12 @@
           <p class="mt-3 text-gray-700">That promise now defines our mission: ensuring no woman or family faces illness or hardship alone.</p>
         </div>
         <div>
-          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="about image" class="rounded-lg shadow-lg w-full object-cover h-64 md:h-80">
+          <img src="assets/smiling_nurse.jpg" alt="about image" class="rounded-lg shadow-lg w-full object-cover h-64 md:h-80">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- VISION + MISSION -->
   <section class="bg-white py-12">
     <div class="max-w-5xl mx-auto px-6 text-center">
       <h3 class="text-xl font-semibold">Our Vision</h3>
@@ -65,7 +62,6 @@
     </div>
   </section>
 
-  <!-- FOCUS AREAS -->
   <section id="focus" class="py-16">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-2xl font-bold text-center">Our Focus Areas</h2>
@@ -99,7 +95,6 @@
     </div>
   </section>
 
-  <!-- STRATEGY -->
   <section class="py-12 bg-ffuf-warm-1">
     <div class="max-w-4xl mx-auto px-6 text-center">
       <h3 class="text-xl font-semibold">Our Strategy</h3>
@@ -107,7 +102,6 @@
     </div>
   </section>
 
-  <!-- IMPACT -->
   <section id="impact" class="py-16">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-2xl font-bold text-center">Our Impact (So Far)</h2>
@@ -146,7 +140,6 @@
     </div>
   </section>
 
-  <!-- PARTNERS -->
   <section id="partners" class="py-12 bg-white">
     <div class="max-w-5xl mx-auto px-6 text-center">
       <h3 class="text-xl font-semibold">Partnerships & Collaboration</h3>
@@ -155,15 +148,22 @@
     </div>
   </section>
 
-  <!-- LEGACY -->
-  <section class="py-12">
+  <section id="contact" class="py-16 bg-ffuf-rose/5">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h3 class="text-2xl font-bold mb-2">Join Us in Empowering Lives</h3>
+    <p class="mb-8 text-gray-700">Support our programs through donations, partnerships, or volunteering.</p>
+
+    <app-contact-form></app-contact-form>
+  </div>
+</section>
+
+<section class="py-12">
     <div class="max-w-4xl mx-auto px-6 text-center">
       <h3 class="text-xl font-semibold">Our Legacy</h3>
       <blockquote class="mt-4 italic text-gray-700">Their hearts inspired the mission. Their legacy drives the work. Their story lives on through every woman and community we serve.</blockquote>
     </div>
   </section>
 
-  <!-- CTA -->
   <section id="contact" class="py-16 bg-ffuf-rose/5">
     <div class="max-w-4xl mx-auto px-6 text-center">
       <h3 class="text-2xl font-bold">Join Us in Empowering Lives</h3>
@@ -175,7 +175,6 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="py-8 bg-white">
     <div class="max-w-6xl mx-auto px-6 text-center">
       <div class="flex flex-col md:flex-row items-center justify-between gap-4">
