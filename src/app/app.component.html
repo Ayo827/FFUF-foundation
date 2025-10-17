@@ -1,21 +1,17 @@
 <div class="scroll-smooth">
   <app-popup-ad></app-popup-ad>
 
-  <nav class="fixed w-full z-40 bg-white/60 backdrop-blur-md">
+  <nav class="fixed w-full z-40 bg-ffuf-purple/80 backdrop-blur-lg">
     <div class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
       <div class="flex items-center space-x-3">
-        <img src="assets/logo.jpg" alt="Foundation Logo" class="h-10 w-auto" />
+        <img src="assets/logo-bg.png" alt="Foundation Logo" class="max-w-[200px] w-full h-16" />
       </div>
       <div class="hidden md:flex items-center space-x-4 text-sm">
-        <a href="#about" class="hover:underline">About</a>
-        <a href="#focus" class="hover:underline">Focus Areas</a>
-        <a href="#impact" class="hover:underline">Impact</a>
-        <a href="#partners" class="hover:underline">Partners</a>
-        <a href="#contact" class="px-3 py-1 rounded-md bg-ffuf-rose text-dark">Donate</a>
-      </div>
-      <div class="md:hidden">
-        <!-- Mobile: simple anchor to top -->
-        <a href="#about" class="px-3 py-1 rounded-md bg-ffuf-rose text-white text-sm">Menu</a>
+        <a href="#about" class="hover:underline text-sm font-medium text-white">About</a>
+        <a href="#focus" class="hover:underline text-sm font-medium text-white">Focus Areas</a>
+        <a href="#impact" class="hover:underline text-sm font-medium text-white">Impact</a>
+        <a href="#partners" class="hover:underline text-sm font-medium text-white">Partners</a>
+        <a href="https://wa.me/2348038503654" class="px-3 py-1 rounded-md bg-ffuf-rose text-sm font-medium text-ffuf-black border-[2px] border-ffuf-rose">Donate</a>
       </div>
     </div>
   </nav>
@@ -28,8 +24,8 @@
           <h1 class="text-3xl md:text-5xl font-extrabold text-white leading-tight">Empowering Women. Strengthening Communities. Transforming Lives.</h1>
           <p class="mt-4 text-white/90 max-w-2xl mx-auto">Honoring the legacy of Francis and Felicia Umenyi through programs that advance women’s health, strengthen rural healthcare, and promote inclusion for all.</p>
           <div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
-            <a href="https://wa.me/2348038503654" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-ffuf-rose text-white shadow-md">👉 Support Our Work</a>
-            <a href="#about" class="inline-flex items-center gap-2 px-6 py-3 rounded-md border border-white/30 text-white">📖 Learn More About Us</a>
+            <a href="https://wa.me/2348038503654" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-ffuf-purple text-base font-medium text-white shadow-md border-[2px] border-ffuf-purple"><span class="material-icons text-white text-md">volunteer_activism</span> Support Our Work</a>
+            <a href="#about" class="inline-flex items-center gap-2 px-6 py-3 rounded-md border-[2px] border-ffuf-purple text-base font-medium text-white"><span class="material-icons text-white text-md">menu_book</span> Learn More About Us</a>
           </div>
         </div>
       </div>
@@ -38,12 +34,13 @@
 
   <section id="about" class="py-16">
     <div class="max-w-5xl mx-auto px-6">
+      <h3 class="text-xl font-bold text-ffuf-purple">About us</h3>
       <div class="grid md:grid-cols-2 gap-8 items-center">
         <div>
           <h2 class="text-2xl font-bold">A Legacy of Compassion and Service</h2>
-          <p class="mt-4 text-gray-700">The Francis & Felicia Umenyi Foundation (FFUF) was established in loving memory of Mr. Francis and Mrs. Felicia Ify Umenyi—two extraordinary Nigerians whose lives embodied compassion, service, and faith in humanity.</p>
-          <p class="mt-3 text-gray-700 italic">“We must do something to help those who cannot access the care I have.” — Mrs. Felicia Umenyi</p>
-          <p class="mt-3 text-gray-700">That promise now defines our mission: ensuring no woman or family faces illness or hardship alone.</p>
+          <p class="mt-4 text-ffuf-black">The Francis & Felicia Umenyi Foundation (FFUF) was established in loving memory of Mr. Francis and Mrs. Felicia Ify Umenyi—two extraordinary Nigerians whose lives embodied compassion, service, and faith in humanity.</p>
+          <p class="mt-3 text-ffuf-black italic">“We must do something to help those who cannot access the care I have.” — Mrs. Felicia Umenyi</p>
+          <p class="mt-3 text-ffuf-black">That promise now defines our mission: ensuring no woman or family faces illness or hardship alone.</p>
         </div>
         <div>
           <img src="assets/smiling_nurse.jpg" alt="about image" class="rounded-lg shadow-lg w-full object-cover h-64 md:h-80">
@@ -54,42 +51,42 @@
 
   <section class="bg-white py-12">
     <div class="max-w-5xl mx-auto px-6 text-center">
-      <h3 class="text-xl font-semibold">Our Vision</h3>
-      <p class="mt-2 text-gray-700 max-w-3xl mx-auto">A world where every woman and child, regardless of background, disability, or economic status, can live healthy, dignified, and fulfilled lives.</p>
+      <h6 class="text-md font-bold text-ffuf-purple">Our Vision</h6>
+      <p class="mt-2 text-ffuf-black text-base max-w-3xl mx-auto">A world where every woman and child, regardless of background, disability, or economic status, can live healthy, dignified, and fulfilled lives.</p>
 
-      <h3 class="mt-6 text-xl font-semibold">Our Mission</h3>
-      <p class="mt-2 text-gray-700 max-w-3xl mx-auto">We work to advance women’s health, strengthen community health systems, promote disability inclusion, and ensure food and nutrition security across rural and underserved areas in Nigeria.</p>
+      <h6 class="mt-6 text-md font-bold text-ffuf-purple">Our Mission</h6>
+      <p class="mt-2 text-ffuf-black text-base max-w-3xl mx-auto">We work to advance women’s health, strengthen community health systems, promote disability inclusion, and ensure food and nutrition security across rural and underserved areas in Nigeria.</p>
     </div>
   </section>
 
   <section id="focus" class="py-16">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-2xl font-bold text-center">Our Focus Areas</h2>
+      <h3 class="text-xl font-bold text-center text-ffuf-purple">Our Focus Areas</h3>
       <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="p-6 rounded-lg shadow bg-white">
-          <div class="text-3xl">💗</div>
-          <h4 class="mt-3 font-semibold">Women’s Health & Cancer Awareness</h4>
-          <p class="mt-2 text-sm text-gray-600">Awareness, prevention, and early detection of breast and gynecological cancers.</p>
+        <div class="p-6 rounded-lg shadow bg-white text-center">
+          <span class="material-icons text-ffuf-purple text-4xl">favorite</span>
+          <h4 class="mt-3 font-bold text-md text-ffuf-black">Women’s Health & Cancer Awareness</h4>
+          <p class="mt-2 text-sm text-ffuf-black/60">Awareness, prevention, and early detection of breast and gynecological cancers.</p>
         </div>
-        <div class="p-6 rounded-lg shadow bg-white">
-          <div class="text-3xl">🏥</div>
-          <h4 class="mt-3 font-semibold">Rural Health & PHC Adoption</h4>
-          <p class="mt-2 text-sm text-gray-600">Adoption and revitalization of primary health centers, starting with Gosa PHC in Abuja.</p>
+        <div class="p-6 rounded-lg shadow bg-white text-center">
+          <span class="material-icons text-ffuf-purple text-4xl">local_hospital</span>
+          <h4 class="mt-3 font-bold text-md text-ffuf-black">Rural Health & PHC Adoption</h4>
+          <p class="mt-2 text-sm text-ffuf-black/60">Adoption and revitalization of primary health centers, starting with Gosa PHC in Abuja.</p>
         </div>
-        <div class="p-6 rounded-lg shadow bg-white">
-          <div class="text-3xl">🍎</div>
-          <h4 class="mt-3 font-semibold">Nutrition & Food Security</h4>
-          <p class="mt-2 text-sm text-gray-600">Food drives and nutrition education for women and children facing hunger.</p>
+        <div class="p-6 rounded-lg shadow bg-white text-center">
+          <span class="material-icons text-ffuf-purple text-4xl">restaurant</span>
+          <h4 class="mt-3 font-bold text-md text-ffuf-black">Nutrition & Food Security</h4>
+          <p class="mt-2 text-sm text-ffuf-black/60">Food drives and nutrition education for women and children facing hunger.</p>
         </div>
-        <div class="p-6 rounded-lg shadow bg-white">
-          <div class="text-3xl">📚</div>
-          <h4 class="mt-3 font-semibold">Education, WASH & Child Health</h4>
-          <p class="mt-2 text-sm text-gray-600">Health education, menstrual hygiene, and sanitation programs in schools.</p>
+        <div class="p-6 rounded-lg shadow bg-white text-center">
+          <span class="material-icons text-ffuf-purple text-4xl">school</span>
+          <h4 class="mt-3 font-bold text-md text-ffuf-black">Education, WASH & Child Health</h4>
+          <p class="mt-2 text-sm text-ffuf-black/60">Health education, menstrual hygiene, and sanitation programs in schools.</p>
         </div>
-        <div class="p-6 rounded-lg shadow bg-white">
-          <div class="text-3xl">♿</div>
-          <h4 class="mt-3 font-semibold">Disability Inclusion</h4>
-          <p class="mt-2 text-sm text-gray-600">Rehabilitation, healthcare access, and advocacy for persons with disabilities.</p>
+        <div class="p-6 rounded-lg shadow bg-white text-center">
+          <span class="material-icons text-ffuf-purple text-4xl">accessible</span>
+          <h4 class="mt-3 font-bold text-md text-ffuf-black">Disability Inclusion</h4>
+          <p class="mt-2 text-sm text-ffuf-black/60">Rehabilitation, healthcare access, and advocacy for persons with disabilities.</p>
         </div>
       </div>
     </div>
@@ -97,44 +94,44 @@
 
   <section class="py-12 bg-ffuf-warm-1">
     <div class="max-w-4xl mx-auto px-6 text-center">
-      <h3 class="text-xl font-semibold">Our Strategy</h3>
-      <p class="mt-4 text-gray-700">We create lasting impact through strengthening existing community structures, building partnerships with government, NGOs, and private sector organizations, and empowering women and communities as agents of change.</p>
+      <h6 class="mt-6 text-md font-bold text-ffuf-purple "><strong>Our Strategy</strong></h6>
+      <p class="mt-4 text-ffuf-black">We create lasting impact through strengthening existing community structures, building partnerships with government, NGOs, and private sector organizations, and empowering women and communities as agents of change.</p>
     </div>
   </section>
 
   <section id="impact" class="py-16">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-2xl font-bold text-center">Our Impact (So Far)</h2>
+       <h3 class="text-xl font-bold text-center text-ffuf-purple">Our Impact</h3>
       <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="p-6 rounded-lg shadow bg-white text-center">
-          <div class="text-3xl">🏥</div>
-          <h4 class="mt-3 font-semibold">Gosa PHC Revitalized</h4>
-          <p class="mt-2 text-sm text-gray-600">Serving thousands annually</p>
+          <span class="material-icons text-ffuf-purple text-4xl">local_hospital</span>
+          <h4 class="mt-3 font-bold text-md text-ffuf-black">Adoption of Gosa PHC</h4>
+          <p class="mt-2 text-sm text-ffuf-black">Serving thousands annually</p>
         </div>
         <div class="p-6 rounded-lg shadow bg-white text-center">
-          <div class="text-3xl">💕</div>
-          <h4 class="mt-3 font-semibold">Cancer Screenings</h4>
-          <p class="mt-2 text-sm text-gray-600">Free screenings, wigs & counseling for hundreds of women</p>
+          <span class="material-icons text-ffuf-purple text-4xl">favorite</span>
+          <h4 class="mt-3 font-bold text-md text-ffuf-black">Cancer Screenings</h4>
+          <p class="mt-2 text-sm text-ffuf-black">Free screenings, wigs & counseling for hundreds of women</p>
         </div>
         <div class="p-6 rounded-lg shadow bg-white text-center">
-          <div class="text-3xl">🍲</div>
-          <h4 class="mt-3 font-semibold">Community Food Drives</h4>
-          <p class="mt-2 text-sm text-gray-600">Supported 500+ families</p>
+          <span class="material-icons text-ffuf-purple text-4xl">restaurant</span>
+          <h4 class="mt-3 font-bold text-md text-ffuf-black">Community Food Drives</h4>
+          <p class="mt-2 text-sm text-ffuf-black">Supported 500+ families</p>
         </div>
         <div class="p-6 rounded-lg shadow bg-white text-center">
-          <div class="text-3xl">🚸</div>
-          <h4 class="mt-3 font-semibold">School WASH Programs</h4>
-          <p class="mt-2 text-sm text-gray-600">Improved sanitation & menstrual hygiene</p>
+          <span class="material-icons text-ffuf-purple text-4xl">water_drop</span>
+          <h4 class="mt-3 font-bold text-md text-ffuf-black">School WASH Programs</h4>
+          <p class="mt-2 text-sm text-ffuf-black">Improved sanitation & menstrual hygiene</p>
         </div>
         <div class="p-6 rounded-lg shadow bg-white text-center">
-          <div class="text-3xl">♿</div>
-          <h4 class="mt-3 font-semibold">Disability Outreach</h4>
-          <p class="mt-2 text-sm text-gray-600">Inclusive health outreach in FCT</p>
+          <span class="material-icons text-ffuf-purple text-4xl">accessible</span>
+          <h4 class="mt-3 font-bold text-md text-ffuf-black">Disability Outreach</h4>
+          <p class="mt-2 text-sm text-ffuf-black">Inclusive health outreach in FCT</p>
         </div>
         <div class="p-6 rounded-lg shadow bg-white text-center">
-          <div class="text-3xl">🤝</div>
-          <h4 class="mt-3 font-semibold">Partnerships</h4>
-          <p class="mt-2 text-sm text-gray-600">FaithCare & CONAC Foundation collaborations</p>
+          <span class="material-icons text-ffuf-purple text-4xl">groups</span>
+          <h4 class="mt-3 font-bold text-md text-ffuf-black">Partnerships</h4>
+          <p class="mt-2 text-sm text-ffuf-black">FaithCare & CONAC Foundation collaborations</p>
         </div>
       </div>
     </div>
@@ -142,16 +139,16 @@
 
   <section id="partners" class="py-12 bg-white">
     <div class="max-w-5xl mx-auto px-6 text-center">
-      <h3 class="text-xl font-semibold">Partnerships & Collaboration</h3>
-      <p class="mt-3 text-gray-700">FFUF partners with international agencies, embassies, foundations, corporations, and NGOs to scale access to health, nutrition, and empowerment programs.</p>
-      <p class="mt-3">Interested in partnering? <a href="#contact" class="underline font-medium">Contact Us</a></p>
+      <h3 class="text-xl font-bold text-center text-ffuf-purple">Partnerships & Collaboration</h3>
+      <p class="mt-3 text-ffuf-black">FFUF partners with international agencies, embassies, foundations, corporations, and NGOs to scale access to health, nutrition, and empowerment programs.</p>
+      <p class="mt-3">Interested in partnering? <a href="https://wa.me/2348038503654" class="text-ffuf-purple text-base font-medium">Contact Us</a></p>
     </div>
   </section>
 
   <section id="contact" class="py-16 bg-ffuf-rose/5">
   <div class="max-w-4xl mx-auto px-6 text-center">
-    <h3 class="text-2xl font-bold mb-2">Join Us in Empowering Lives</h3>
-    <p class="mb-8 text-gray-700">Support our programs through donations, partnerships, or volunteering.</p>
+    <h3 class="text-xl font-bold mb-2 text-ffuf-purple">Join Us in Empowering Lives</h3>
+    <p class="mb-8 text-ffuf-black italic text-sm">Support our programs through donations, partnerships, or volunteering.</p>
 
     <app-contact-form></app-contact-form>
   </div>
@@ -159,18 +156,18 @@
 
 <section class="py-12">
     <div class="max-w-4xl mx-auto px-6 text-center">
-      <h3 class="text-xl font-semibold">Our Legacy</h3>
-      <blockquote class="mt-4 italic text-gray-700">Their hearts inspired the mission. Their legacy drives the work. Their story lives on through every woman and community we serve.</blockquote>
+      <h3 class="text-xl font-bold text-ffuf-purple">Our Legacy</h3>
+      <blockquote class="mt-4 italic text-ffuf-black">Their hearts inspired the mission. Their legacy drives the work. Their story lives on through every woman and community we serve.</blockquote>
     </div>
   </section>
 
   <section id="contact" class="py-16 bg-ffuf-rose/5">
     <div class="max-w-4xl mx-auto px-6 text-center">
-      <h3 class="text-2xl font-bold">Join Us in Empowering Lives</h3>
-      <p class="mt-2 text-gray-700">Support our programs through donations, partnerships, or volunteering.</p>
+      <h3 class="text-xl font-bold text-ffuf-purple">Join Us in Empowering Lives</h3>
+      <p class="mt-2 text-ffuf-black/40 text-sm font-medium">Support our programs through donations, partnerships, or volunteering.</p>
       <div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
-        <a href="mailto:info@ffufoundation.org?subject=Support%20FFUF" class="px-6 py-3 rounded-md bg-ffuf-rose text-white">Donate Now</a>
-        <a href="mailto:info@ffufoundation.org?subject=Partner%20with%20FFUF" class="px-6 py-3 rounded-md border border-ffuf-rose text-ffuf-rose">Partner With Us</a>
+        <a href="mailto:info@ffufoundation.org?subject=Support%20FFUF" class="px-6 py-3 rounded-md bg-ffuf-purple text-white text-sm font-medium">Donate Now</a>
+        <a href="mailto:info@ffufoundation.org?subject=Partner%20with%20FFUF" class="px-6 py-3 rounded-md border-[2px] border-ffuf-purple text-ffuf-purple text-sm font-medium">Partner With Us</a>
       </div>
     </div>
   </section>
@@ -179,16 +176,16 @@
     <div class="max-w-6xl mx-auto px-6 text-center">
       <div class="flex flex-col md:flex-row items-center justify-between gap-4">
         <div>
-          <div class="font-semibold">Francis & Felicia Umenyi Foundation © 2025</div>
-          <div class="text-sm text-gray-600">Enduring Legacy. Enriching Lives. 📍 Abuja, Nigeria</div>
+          <div class="font-semibold text-md text-ffuf-purple text-left">Francis & Felicia Umenyi Foundation © {{ currentYear }}</div>
+          <div class="text-sm text-ffuf-black font-medium">Enduring Legacy. Enriching Lives. <span class="material-icons text-ffuf-purple">location_on</span> Abuja, Nigeria</div>
         </div>
         <div class="flex items-center gap-4">
-          <a href="#" aria-label="LinkedIn" class="text-sm underline">LinkedIn</a>
-          <a href="#" aria-label="Instagram" class="text-sm underline">Instagram</a>
-          <a href="#" aria-label="Facebook" class="text-sm underline">Facebook</a>
+          <a href="https://www.instagram.com/umenyifoundation/" aria-label="Instagram" class="text-sm text-ffuf-purple font-medium hover:text-ffuf-rose">Instagram</a>
+          <a href="https://www.facebook.com/umenyifoundation" aria-label="Facebook" class="text-sm text-ffuf-purple font-medium hover:text-ffuf-rose">Facebook</a>
+          <a href="https://x.com/umenyifoundatn" aria-label="Twitter" class="text-sm text-ffuf-purple font-medium hover:text-ffuf-rose">X (Formerly Twitter)</a>
         </div>
       </div>
-      <div class="mt-6 text-xs text-gray-500">www.ffufoundation.org | info&#64;ffufoundation.org</div>
+      <!-- <div class="mt-6 text-xs font-medium text-ffuf-purple border-t-[1px] border-ffuf-rose"><a href="https://www.linkedin.com/in/ayodeji-adebola-profile/">Powered by Carter</a></div> -->
     </div>
   </footer>
 </div>

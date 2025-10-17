@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-contact-form',
@@ -18,13 +20,25 @@ export class ContactFormComponent {
 
   submitted = false;
 
-  onSubmit() {
-    if (this.formData.name && this.formData.email && this.formData.message) {
-      console.log('Form Data:', this.formData);
+ onSubmit() {
+   const { emailjsServiceId, emailjsTemplateId, emailjsPublicKey } = environment;
 
-      // Here you can later integrate email service (like EmailJS or backend API)
-      this.submitted = true;
+    emailjs.send(
+      emailjsServiceId,
+      emailjsTemplateId,
+      {
+        from_name: this.formData.name,
+        reply_to: this.formData.email,
+        message: this.formData.message
+      },
+      emailjsPublicKey
+    ).then((result: EmailJSResponseStatus) => {
+      console.log('SUCCESS!', result.text);
+      alert('✅ Message sent successfully!');
       this.formData = { name: '', email: '', message: '' };
-    }
+    }, (error) => {
+      console.error('FAILED...', error.text);
+      alert('❌ Failed to send message. Please try again.');
+    });
   }
 }
