@@ -51,7 +51,7 @@
               "optimization": false,
               "vendorChunk": true,
               "extractLicenses": false,
-              "sourceMap": true,
+              "sourceMap": false,
               "namedChunks": true
             }
           },
@@ -79,12 +79,28 @@
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "main": "src/test.ts",
-            "polyfills": ["zone.js/testing"],
+            "polyfills": [
+              "zone.js/testing"
+            ],
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.css"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
             "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
           }
         }
       }
@@ -92,6 +108,9 @@
   },
   "defaultProject": "ffuf-starter",
   "cli": {
-    "analytics": "d1e59f79-f9ac-4d14-bfad-0e74b4f64b73"
+    "analytics": "d1e59f79-f9ac-4d14-bfad-0e74b4f64b73",
+    "schematicCollections": [
+      "angular-eslint"
+    ]
   }
 }

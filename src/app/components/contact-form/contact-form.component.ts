@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 import { environment } from '../../../environments/environment';
 
 @Component({
@@ -19,10 +19,14 @@ export class ContactFormComponent {
   };
 
   submitted = false;
+  alertMessage = '';
+  alertType: 'success' | 'error' | '' = '';
+  isSubmitting = false;
 
- onSubmit() {
-   const { emailjsServiceId, emailjsTemplateId, emailjsPublicKey } = environment;
-
+  onSubmit() {
+    const { emailjsServiceId, emailjsTemplateId, emailjsPublicKey } = environment;
+ if (this.isSubmitting) return;
+    this.isSubmitting = true;
     emailjs.send(
       emailjsServiceId,
       emailjsTemplateId,
@@ -32,13 +36,25 @@ export class ContactFormComponent {
         message: this.formData.message
       },
       emailjsPublicKey
-    ).then((result: EmailJSResponseStatus) => {
-      console.log('SUCCESS!', result.text);
-      alert('✅ Message sent successfully!');
+    ).then(() => {
+      this.alertMessage = '✅ Message sent successfully!';
+      this.alertType = 'success';
       this.formData = { name: '', email: '', message: '' };
-    }, (error) => {
-      console.error('FAILED...', error.text);
-      alert('❌ Failed to send message. Please try again.');
+      this.clearAlert();
+    }, () => {
+      this.alertMessage = '❌ Failed to send message. Please try again.';
+      this.alertType = 'error';
+      this.clearAlert();
+
+    }).finally(() => {
+      this.isSubmitting = false;
     });
+  }
+
+  clearAlert() {
+    setTimeout(() => {
+      this.alertMessage = '';
+      this.alertType = '';
+    }, 5000);
   }
 }

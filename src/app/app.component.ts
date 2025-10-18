@@ -1,4 +1,4 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA, AfterViewInit, ViewChild, ElementRef} from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, ViewChild, ElementRef} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { PopupAdComponent } from './components/popup-ad/popup-ad.component';

@@ -5,9 +5,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --open",
-    "build": "ng build",
+    "build": "ng build --configuration production && npm run obfuscate",
     "preview": "vite preview",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "obfuscate": "javascript-obfuscator dist/ffuf-starter --output dist/ffuf-starter"
   },
   "dependencies": {
     "@angular/animations": "^18.0.0",
@@ -30,10 +31,14 @@
     "@angular/cli": "^18.0.0",
     "@tailwindcss/postcss": "^4.1.14",
     "@types/jasmine": "^5.1.10",
+    "angular-eslint": "20.4.0",
     "autoprefixer": "^10.4.21",
+    "eslint": "^9.37.0",
+    "javascript-obfuscator": "^4.1.1",
     "postcss": "^8.5.6",
     "sass": "^1.69.0",
     "tailwindcss": "^3.4.18",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "typescript-eslint": "8.46.0"
   }
 }
